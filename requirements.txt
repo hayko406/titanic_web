@@ -21,5 +21,5 @@ scikit-learn-intelex==2023.2.1
 scipy==1.7.3
 tbb==2021.10.0
 tenacity==8.2.2
-threadpoolctl==3.2.0
+threadpoolctl==3.1.0
 Werkzeug==2.2.3
