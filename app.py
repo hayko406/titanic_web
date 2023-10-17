@@ -6,7 +6,8 @@ import warnings
 warnings.filterwarnings('ignore')
 import joblib
 
-app = dash.Dash(__name__, use_pages=False, external_stylesheets=[dbc.themes.DARKLY]) # Регистрируем веб приложение
+app = dash.Dash(__name__, use_pages=False, external_stylesheets=[dbc.themes.DARKLY]) 
+server = app.server
 model = joblib.load('titanic_dash.pkl')
 
 app.layout = html.Div([
