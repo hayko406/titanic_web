@@ -6,11 +6,13 @@ import warnings
 warnings.filterwarnings('ignore')
 import joblib
 
-app = dash.Dash(__name__, use_pages=False, external_stylesheets=[dbc.themes.DARKLY]) 
-server = app.server
+app = dash.Dash(__name__, use_pages=False, external_stylesheets=[dbc.themes.DARKLY]) # Регистрируем веб приложение
 model = joblib.load('titanic_dash.pkl')
 
 app.layout = html.Div([
+    dbc.Col([
+    html.H4('Привет, меня зовут Гайк. Давай попробуем узнать, какие у тебя были бы шансы выжить на Титанике. Выбери свои параметры, а обученная модель предскажет вероятность. Примечание: 1й класс - самый дорогой.'),
+], width={'size': 8}),
     dbc.Col([
     html.H4('Класс'),
     dcc.RadioItems([1, 2, 3], id='class', value=3, className='me-2'),
