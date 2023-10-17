@@ -32,6 +32,7 @@ app.layout = html.Div([
               Input('proba', 'n_clicks')],
               prevent_initial_call=True) 
 def update_output(cls, age, sex, trigger):
+    print(cls, age, sex)
     if sex=='мужской':
         sex = 1
         h = 'выжил'
