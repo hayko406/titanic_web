@@ -19,7 +19,6 @@ plotly==5.9.0
 scikit-learn==1.0.2
 scikit-learn-intelex==2023.2.1
 scipy==1.7.3
-sklearn==0.0.post10
 tbb==2021.10.0
 tenacity==8.2.2
 threadpoolctl==3.2.0
